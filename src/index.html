@@ -4,12 +4,28 @@
     <meta charset="utf-8">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/darkly/bootstrap.min.css" rel="stylesheet" integrity="sha384-kVo/Eh0sv7ZdiwZK32nRsp1FrDT3sLRLx3zVpSSTI9UdO5H02LJNLBg5F1gwvKg0" crossorigin="anonymous">
-    <title>boilerplate</title>
+    <title>Movie Search</title>
   </head>
   <body>
-    <h1>Test</h1>
+    <div class="container">
+      <header class="page-header">
+        <h1>Movie Search</h1>
+      </header>
+      <div class="row">
+        <form class="form-group">
+          <input id="omdb" class="col-xs-5" type="text" name="movieName">
+          <button type="submit" class="col-xs-1 btn btn-primary btn-xs" name="search">Search</button>
+          <select id="genre" class="col-xs-offset-1 col-xs-3" name="genre">
+              <option value="" selected disabled>-select-</option>
+          </select>
+        </form>
+      </div>
+      <div id="output" class="col-xs-10 col-xs-offset-1">
 
-    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script type="text/javascript" src="main.js"></script>
   </body>
